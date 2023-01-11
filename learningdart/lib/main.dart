@@ -4,14 +4,10 @@ void main() {
   runApp(const MyApp());
 }
 
-class Person {
-  final String name;
-
-  Person(this.name);
-  @override
-  bool operator ==(covariant Person other) => other.name == name;
-  @override
-  int get hashCode => name.hashCode;
+void test() {
+  String? name = null;
+  name = 'foo';
+  print(name);
 }
 
 class MyApp extends StatelessWidget {
